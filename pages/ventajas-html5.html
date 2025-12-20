@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ventajas y características principales de HTML5">
+    <title>Ventajas de HTML5 - Evolución del HTML</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <!-- ============================================
+         HEADER - ENCABEZADO PRINCIPAL
+         ============================================ -->
+    <header>
+        <h1><i class="fas fa-star"></i> Ventajas de HTML5</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="historia.html"><i class="fas fa-history"></i> Historia</a></li>
+                <li><a href="comparativa.html"><i class="fas fa-exchange-alt"></i> Comparativa</a></li>
+                <li><a href="ventajas-html5.html" class="active"><i class="fas fa-star"></i> Ventajas HTML5</a></li>
+                <li><a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ============================================
+         CONTENIDO PRINCIPAL
+         ============================================ -->
+    <main>
+        <!-- Sección Principal de Ventajas -->
+        <section>
+            <h2><i class="fas fa-trophy"></i> Principales Ventajas de HTML5</h2>
+
+            <article>
+                <h3><i class="fas fa-sitemap"></i> 1. Elementos Semánticos</h3>
+                <p>HTML5 introduce etiquetas semánticas que describen mejor el contenido y su propósito, mejorando la
+                    <strong>accesibilidad y el SEO</strong>:</p>
+                <div class="content-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-heading"></i>
+                        <h3>&lt;header&gt;</h3>
+                        <p>Encabezado de página o sección</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-bars"></i>
+                        <h3>&lt;nav&gt;</h3>
+                        <p>Menú de navegación</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-puzzle-piece"></i>
+                        <h3>&lt;section&gt;</h3>
+                        <p>Sección temática de contenido</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-newspaper"></i>
+                        <h3>&lt;article&gt;</h3>
+                        <p>Contenido independiente</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-columns"></i>
+                        <h3>&lt;aside&gt;</h3>
+                        <p>Contenido secundario</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-shoe-prints"></i>
+                        <h3>&lt;footer&gt;</h3>
+                        <p>Pie de página</p>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <h3><i class="fas fa-photo-video"></i> 2. Multimedia Nativa</h3>
+                <p>Soporte integrado para audio y video <strong>sin necesidad de plugins</strong> como Flash:</p>
+                <ul class="custom-list">
+                    <li><code>&lt;video&gt;</code> - Reproducción de video con controles nativos</li>
+                    <li><code>&lt;audio&gt;</code> - Reproducción de audio sin plugins externos</li>
+                    <li><code>&lt;canvas&gt;</code> - Gráficos y animaciones 2D dinámicas</li>
+                    <li><code>&lt;svg&gt;</code> - Gráficos vectoriales escalables integrados</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3><i class="fas fa-edit"></i> 3. Formularios Mejorados</h3>
+                <p>Nuevos tipos de entrada y <strong>validación del lado del cliente</strong> sin JavaScript:</p>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Tipo de Input</th>
+                                <th>Descripción</th>
+                                <th>Ejemplo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>email</code></td>
+                                <td>Valida formato de correo</td>
+                                <td>usuario@ejemplo.com</td>
+                            </tr>
+                            <tr>
+                                <td><code>url</code></td>
+                                <td>Valida formato de URL</td>
+                                <td>https://ejemplo.com</td>
+                            </tr>
+                            <tr>
+                                <td><code>number</code></td>
+                                <td>Solo acepta números</td>
+                                <td>123, 45.67</td>
+                            </tr>
+                            <tr>
+                                <td><code>date</code></td>
+                                <td>Selector de fecha nativo</td>
+                                <td>2025-12-20</td>
+                            </tr>
+                            <tr>
+                                <td><code>color</code></td>
+                                <td>Selector de color</td>
+                                <td>#3498db</td>
+                            </tr>
+                            <tr>
+                                <td><code>range</code></td>
+                                <td>Control deslizante</td>
+                                <td>0 - 100</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="mt-2"><strong>Atributos útiles:</strong> <code>required</code>, <code>pattern</code>,
+                    <code>min</code>, <code>max</code>, <code>placeholder</code>, <code>autofocus</code></p>
+            </article>
+
+            <article>
+                <h3><i class="fas fa-cogs"></i> 4. APIs Modernas</h3>
+                <p>HTML5 incluye múltiples APIs para <strong>aplicaciones web avanzadas</strong>:</p>
+                <div class="content-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Geolocalización</h3>
+                        <p>Obtener ubicación del usuario</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-database"></i>
+                        <h3>Web Storage</h3>
+                        <p>localStorage y sessionStorage</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-microchip"></i>
+                        <h3>Web Workers</h3>
+                        <p>Procesamiento en segundo plano</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-hand-pointer"></i>
+                        <h3>Drag and Drop</h3>
+                        <p>Arrastrar y soltar nativo</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-plug"></i>
+                        <h3>WebSockets</h3>
+                        <p>Comunicación bidireccional</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-wifi"></i>
+                        <h3>Offline Apps</h3>
+                        <p>Aplicaciones sin conexión</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Sección de Ejemplos de Uso -->
+        <section>
+            <h2><i class="fas fa-laptop-code"></i> Ejemplos de Uso Actual</h2>
+            <article>
+                <h3><i class="fas fa-globe"></i> Aplicaciones de HTML5</h3>
+                <p>HTML5 es utilizado en las principales plataformas y servicios web:</p>
+                <ol>
+                    <li><strong>Aplicaciones web progresivas (PWA)</strong> - Apps instalables desde el navegador</li>
+                    <li><strong>Plataformas de streaming</strong> - Netflix, YouTube, Spotify Web</li>
+                    <li><strong>Juegos web</strong> - Juegos 2D y 3D sin plugins</li>
+                    <li><strong>Aplicaciones empresariales</strong> - CRMs, ERPs basados en web</li>
+                    <li><strong>Sitios web responsivos</strong> - Adaptables a cualquier dispositivo</li>
+                </ol>
+            </article>
+        </section>
+    </main>
+
+    <!-- ============================================
+         FOOTER - PIE DE PÁGINA
+         ============================================ -->
+    <footer>
+        <div class="footer-content">
+            <p><i class="far fa-copyright"></i> 2025 - Proyecto de Tecnología Web | UTPL</p>
+            <div class="social-links">
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================
+         BOTONES FLOTANTES
+         ============================================ -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+        <i class="fas fa-moon" id="themeIcon"></i>
+    </button>
+
+    <button class="scroll-top" id="scrollTop" aria-label="Volver arriba">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario de contacto y suscripción">
+    <title>Contacto - Evolución del HTML</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <!-- ============================================
+         HEADER - ENCABEZADO PRINCIPAL
+         ============================================ -->
+    <header>
+        <h1><i class="fas fa-envelope"></i> Contacto y Suscripción</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="historia.html"><i class="fas fa-history"></i> Historia</a></li>
+                <li><a href="comparativa.html"><i class="fas fa-exchange-alt"></i> Comparativa</a></li>
+                <li><a href="ventajas-html5.html"><i class="fas fa-star"></i> Ventajas HTML5</a></li>
+                <li><a href="contacto.html" class="active"><i class="fas fa-envelope"></i> Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ============================================
+         CONTENIDO PRINCIPAL
+         ============================================ -->
+    <main>
+        <!-- Sección de Formulario de Contacto -->
+        <section>
+            <h2><i class="fas fa-paper-plane"></i> Formulario de Contacto</h2>
+            <article>
+                <h3><i class="fas fa-comment-dots"></i> Envíanos un mensaje</h3>
+                <p>Si tienes preguntas o comentarios sobre el contenido de este sitio, por favor completa el siguiente
+                    formulario:</p>
+
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="nombre">
+                            <i class="fas fa-user"></i> Nombre Completo:
+                        </label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre completo" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">
+                            <i class="fas fa-at"></i> Correo Electrónico:
+                        </label>
+                        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="asunto">
+                            <i class="fas fa-tag"></i> Asunto:
+                        </label>
+                        <select id="asunto" name="asunto" required>
+                            <option value="">Selecciona un asunto</option>
+                            <option value="consulta">Consulta general</option>
+                            <option value="sugerencia">Sugerencia</option>
+                            <option value="error">Reportar error</option>
+                            <option value="colaboracion">Colaboración</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">
+                            <i class="fas fa-comment"></i> Tu Mensaje:
+                        </label>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..."
+                            required></textarea>
+                    </div>
+
+                    <button type="submit">
+                        <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                    </button>
+                    <button type="reset" class="btn-secondary">
+                        <i class="fas fa-eraser"></i> Limpiar
+                    </button>
+                </form>
+            </article>
+        </section>
+
+        <!-- Sección de Información de Contacto con Grid -->
+        <section>
+            <h2><i class="fas fa-address-card"></i> Información de Contacto</h2>
+            <div class="contact-info">
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <div class="contact-card-content">
+                        <h4>Email</h4>
+                        <p>emmacas12@utpl.edu.ec</p>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-university"></i>
+                    <div class="contact-card-content">
+                        <h4>Universidad</h4>
+                        <p>Universidad Técnica Particular de Loja</p>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-book"></i>
+                    <div class="contact-card-content">
+                        <h4>Materia</h4>
+                        <p>Tecnología Web</p>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <div class="contact-card-content">
+                        <h4>Período</h4>
+                        <p>2025</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Redes Sociales -->
+        <section class="text-center">
+            <h2><i class="fas fa-share-alt"></i> Síguenos en Redes</h2>
+            <p>Mantente actualizado con las últimas novedades sobre tecnología web:</p>
+            <div class="social-links mt-2" style="justify-content: center;">
+                <a href="#" aria-label="Facebook" style="background: #3b5998;"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter" style="background: #1da1f2;"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"
+                    style="background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn" style="background: #0077b5;"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="GitHub" style="background: #333;"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="YouTube" style="background: #ff0000;"><i class="fab fa-youtube"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================================
+         FOOTER - PIE DE PÁGINA
+         ============================================ -->
+    <footer>
+        <div class="footer-content">
+            <p><i class="far fa-copyright"></i> 2025 - Proyecto de Tecnología Web | UTPL</p>
+            <div class="social-links">
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================
+         BOTONES FLOTANTES
+         ============================================ -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+        <i class="fas fa-moon" id="themeIcon"></i>
+    </button>
+
+    <button class="scroll-top" id="scrollTop" aria-label="Volver arriba">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
